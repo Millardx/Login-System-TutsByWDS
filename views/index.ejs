@@ -1,4 +1,6 @@
-<h1>Hi <%= name %></h1>
+<h1>Hi <%= name %></h1> <!-- Greeting the user with their name, dynamically inserted from server-side code -->
+
+<!-- Form to handle user logout using HTTP DELETE method -->
 <form action="/logout?_method=DELETE" method="POST">
-  <button type="submit">Log Out</button>
+  <button type="submit">Log Out</button> <!-- Button to submit the form and trigger logout -->
 </form>
