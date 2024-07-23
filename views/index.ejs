@@ -1,4 +1,15 @@
-<h1>Hi <%= name %></h1>
-<form action="/logout?_method=DELETE" method="POST">
-  <button type="submit">Log Out</button>
-</form>
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Hi,<%= name %></h1> <!-- Greeting the user with their name, dynamically inserted from server-side code -->
+
+    <!-- Form to handle user logout using HTTP DELETE method -->
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>

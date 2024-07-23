@@ -1,0 +1,8 @@
+<h1>Staff Page</h1> <!-- Main heading for the staff page -->
+
+<p>Welcome Staff, <%= name %>!</p> <!-- Greeting the staff member with their name, dynamically inserted from server-side code -->
+
+<!-- Form to handle user logout using HTTP DELETE method -->
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Logout</button> <!-- Button to submit the form and trigger logout -->
+</form>
