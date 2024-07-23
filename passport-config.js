@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+//passport-config.js
+>>>>>>> 0b75bd62bab99798678fb814cda593e803431cfd
 const LocalStrategy = require('passport-local').Strategy; // Import LocalStrategy for username/password authentication
 const bcrypt = require('bcrypt'); // Import bcrypt for password hashing and comparison
 const User = require('./models/User'); // Import User model for database operations

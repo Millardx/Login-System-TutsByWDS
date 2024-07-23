@@ -3,6 +3,7 @@
 <!-- Form for user registration -->
 <form action="/register" method="POST">
     <div>
+<<<<<<< HEAD
         <label for="name">Name</label> <!-- Label for name input -->
         <input type="text" id="name" name="name" required> <!-- Name input field -->
     </div>
@@ -18,4 +19,26 @@
 </form>
 
 <!-- Link to the login page -->
+=======
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <label for="role">Role</label>
+        <select id="role" name="role" required> 
+            <option value="staff">Staff</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+    <button type="submit">Register</button>
+</form>
+>>>>>>> 0b75bd62bab99798678fb814cda593e803431cfd
 <a href="/login">Login</a>

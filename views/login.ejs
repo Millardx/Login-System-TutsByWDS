@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Login</h1> <!-- Main heading for the login page -->
 
 <!-- Display error messages if there are any -->
@@ -20,3 +21,41 @@
 
 <!-- Link to the registration page -->
 <a href="/register">Register</a>
+=======
+<!-- login.ejs -->
+<!DOCTYPE html> <!-- Declare the document type and HTML version -->
+<html lang="en"> <!-- Start of the HTML document with language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for different devices -->
+    <title>Login</title> <!-- Title of the page -->
+</head>
+<body> <!-- Start of the body section -->
+    <h1>LOGIN</h1> <!-- Main heading for the login page -->
+
+    <!-- Display error messages if there are any -->
+    <% if (messages.error && messages.error.length > 0) { %>
+        <ul> <!-- Unordered list to display error messages -->
+            <% messages.error.forEach(function(error) { %>
+                <li><%= error %></li> <!-- List item for each error message -->
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <!-- Form for user login -->
+    <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email" required> <!-- Email input field -->
+        <input type="password" name="password" placeholder="Password" required> <!-- Password input field -->
+        <button type="submit">Login</button> <!-- Submit button for the form -->
+    </form>
+
+    <!-- Form for logging in as a guest -->
+    <form action="/guest" method="GET">
+        <button type="submit">Login as Guest</button> <!-- Button to submit the form and log in as a guest -->
+        
+    </form>
+    <br><a href="/register">Register</a>
+
+</body>
+</html>
+>>>>>>> 0b75bd62bab99798678fb814cda593e803431cfd
